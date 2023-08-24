@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Currency Converter</title>
+    <link rel="stylesheet" href="style.css" />
+    
+  </head>
+  <body>
+    <nav>
+      <div class="logo">My CurrencyCoverter</div>
+      <ul>
+        <li><a href="home">Home</a></li>
+        <li><a href="/about">About Us</a></li>
+        <li><a href="/contact">Contact</a></li>
+      </ul>
+    </nav>
+
+    <div class="container">
+      <h1>Choose a Currency to covert:</h1>
+      <form action="/action.php" method="get">
+        <label for="quantity">Choose a Quantity: </label>
+        <input type="number" name="quantity" min="1" max="10" />
+        <label for="currency">Choose a Currency:</label>
+        <select name="currency">
+          <option value="INR">Indian Rupee</option>
+          <option value="USD">US Dollers</option>
+          <option value="EUR">Euro</option>
+        </select>
+        <button class="btn" type="submit">Submit</button>
+      </form>
+
+      <div class="output" id="ot">
+        <table>
+          <h2>Coverted Values</h2>
+          <thead>
+            <tr>
+              <th>Currency</th>
+              <th>Code</th>
+              <th>Value</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+      </div>
+    </div>
+    <footer>Copyright &copy; All rights reserved</footer>
+    <script src="main.js"></script>
+  </body>
+</html>
